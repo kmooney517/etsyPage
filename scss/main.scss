@@ -6,6 +6,10 @@
 
 body {
   min-width: 1000px;
+  div .large_area{
+    background-color: #F5F5F1;
+    margin-right: 60px
+  }
 }
 
 //Header Styling----------------------------------------//
@@ -24,7 +28,7 @@ body {
     li button{
       background-color: #34A8C4;
       color: white;
-      border-radius: 2px;
+      border-radius: 1px;
       border: none;
       padding: 5px 10px;
       margin-left: -10px;
@@ -34,8 +38,9 @@ body {
     }
     li input{
       height: 22px; 
-      border-color: #34A8C4;
+      border-color: 1px solid grey;
       border-radius: 4px;
+      padding-right: 40px;
     }
   }
   div.right{
@@ -118,10 +123,13 @@ body {
 }
 
 //Left Side-bar styling ---------------------------------//
+
 .left_content{
   background-color: #F5F5F1;
   padding-left: 100px;
   font-size: 12px;
+  float: left;
+  margin-right: 20px;
 }
 
 .sidebar_one {
@@ -158,9 +166,10 @@ body {
   padding-top: 25px;
   width: 240px;
   font-size: 14px;
+  margin-bottom: 900px;
   p {
     font-weight: bold;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
   }
   .divider{
     margin-top: 15px;
@@ -171,21 +180,41 @@ body {
     border-radius: 2px;
     background-color: white;
     padding: 10px;
+    .dividerSpecial{
+      margin-top: -20px;
+      margin-bottom: 15px;
+      position: relative;
+      &:after{
+        content: '';
+        position: absolute;
+        top: -45px;
+        right: 15px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 0 5px 10px;
+        border-color: transparent transparent transparent grey;
+      }
+    }
     ul{
       padding-left: 10px;
     }
     li{
       padding: 5px;
       margin-left: -15px;
+
       a{
         text-decoration: none;
         color: #34A8C4;
-        padding-left: 5px;
+        margin-left: -25px;
         &:hover{
           color: black;
           font-weight:bold;
         }
       }
+    }
+    .chooseLocation{
+        margin-left: 13px;
     }
     .shipIt{
       padding-bottom: 25px;
@@ -194,7 +223,6 @@ body {
     width: 200px;
     padding-left: 5px;
     }
-    
     form{
       display:inline-block;
       margin-top: -15px;
@@ -226,7 +254,7 @@ body {
     p.money{
       position: relative;
       font-weight: normal;
-      bottom: 28px;
+      bottom: 36px;
       right: -10px;
       width: 5px;
       margin-bottom: -40px;
@@ -235,7 +263,7 @@ body {
       position: relative;
       font-weight: normal;
       right: 96px;
-      bottom: 9px;
+      bottom: 32px;
       left: 110px;
       width: 5px;
     }
@@ -270,5 +298,83 @@ body {
   }
   .black{
     background-color: black;
+  }
+}
+
+.tiles{
+  font-size: 12px;
+  background-color: #F5F5F1;
+  margin-left: 20px;
+  .extra{
+    padding-top: 25px;
+    font-size: 13px;
+    li.top{
+      font-weight: bold;
+      font-size: 15px;
+      padding-left: 20px;
+    }
+    a{
+      padding-left: 20px;
+      text-decoration: none;
+      color: #34A8C4;
+      position: relative;
+    }
+    .sortBy{
+      float: right;
+      margin-right: 174px;
+      a{
+        padding-left: 0;
+        text-decoration: none;
+        color: #34A8C4;
+        position: relative;
+        &:after{
+        content: '';
+        position: absolute;
+        top: 5px;
+        right: -17px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 7px 5px 0 5px;
+        border-color: #c2c7cc transparent transparent transparent;
+      }
+      }
+    }
+  }
+  .eachTile {
+    width: 230px;
+    display: inline-block;
+    margin-left: 20px;
+    background-color: white;
+    border: 1px solid #9FA0AB;
+    border-radius: 3px;
+    margin-top: 20px;
+    position: relative;
+    img{
+      width: 100%;
+    }
+    p{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-bottom: 5px;
+      &.price{
+        float: right;
+        color: #76C238;
+      }
+      &.title a{
+        text-decoration: none;
+        color: black;
+      }
+      &.name a{
+        text-decoration: none;
+        color: grey;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }

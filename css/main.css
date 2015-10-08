@@ -5,6 +5,9 @@
 
 body {
   min-width: 1000px; }
+  body div .large_area {
+    background-color: #F5F5F1;
+    margin-right: 60px; }
 
 .header {
   display: inline-block;
@@ -19,7 +22,7 @@ body {
     .header div.left li button {
       background-color: #34A8C4;
       color: white;
-      border-radius: 2px;
+      border-radius: 1px;
       border: none;
       padding: 5px 10px;
       margin-left: -10px; }
@@ -27,8 +30,9 @@ body {
         background-color: #0ACCF3; }
     .header div.left li input {
       height: 22px;
-      border-color: #34A8C4;
-      border-radius: 4px; }
+      border-color: 1px solid grey;
+      border-radius: 4px;
+      padding-right: 40px; }
   .header div.right {
     float: right;
     margin-left: 300px; }
@@ -94,7 +98,9 @@ body {
 .left_content {
   background-color: #F5F5F1;
   padding-left: 100px;
-  font-size: 12px; }
+  font-size: 12px;
+  float: left;
+  margin-right: 20px; }
 
 .sidebar_one {
   padding-top: 25px;
@@ -121,10 +127,11 @@ body {
 .sidebar_two {
   padding-top: 25px;
   width: 240px;
-  font-size: 14px; }
+  font-size: 14px;
+  margin-bottom: 900px; }
   .sidebar_two p {
     font-weight: bold;
-    padding-bottom: 5px; }
+    padding-bottom: 20px; }
   .sidebar_two .divider {
     margin-top: 15px;
     margin-bottom: 15px; }
@@ -133,6 +140,20 @@ body {
     border-radius: 2px;
     background-color: white;
     padding: 10px; }
+    .sidebar_two .box .dividerSpecial {
+      margin-top: -20px;
+      margin-bottom: 15px;
+      position: relative; }
+      .sidebar_two .box .dividerSpecial:after {
+        content: '';
+        position: absolute;
+        top: -45px;
+        right: 15px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 0 5px 10px;
+        border-color: transparent transparent transparent grey; }
     .sidebar_two .box ul {
       padding-left: 10px; }
     .sidebar_two .box li {
@@ -141,10 +162,12 @@ body {
       .sidebar_two .box li a {
         text-decoration: none;
         color: #34A8C4;
-        padding-left: 5px; }
+        margin-left: -25px; }
         .sidebar_two .box li a:hover {
           color: black;
           font-weight: bold; }
+    .sidebar_two .box .chooseLocation {
+      margin-left: 13px; }
     .sidebar_two .box .shipIt {
       padding-bottom: 25px; }
     .sidebar_two .box .shipping input {
@@ -176,7 +199,7 @@ body {
     .sidebar_two .box p.money {
       position: relative;
       font-weight: normal;
-      bottom: 28px;
+      bottom: 36px;
       right: -10px;
       width: 5px;
       margin-bottom: -40px; }
@@ -184,7 +207,7 @@ body {
       position: relative;
       font-weight: normal;
       right: 96px;
-      bottom: 9px;
+      bottom: 32px;
       left: 110px;
       width: 5px; }
   .sidebar_two .button {
@@ -207,3 +230,67 @@ body {
     background-color: indigo; }
   .sidebar_two .black {
     background-color: black; }
+
+.tiles {
+  font-size: 12px;
+  background-color: #F5F5F1;
+  margin-left: 20px; }
+  .tiles .extra {
+    padding-top: 25px;
+    font-size: 13px; }
+    .tiles .extra li.top {
+      font-weight: bold;
+      font-size: 15px;
+      padding-left: 20px; }
+    .tiles .extra a {
+      padding-left: 20px;
+      text-decoration: none;
+      color: #34A8C4;
+      position: relative; }
+    .tiles .extra .sortBy {
+      float: right;
+      margin-right: 174px; }
+      .tiles .extra .sortBy a {
+        padding-left: 0;
+        text-decoration: none;
+        color: #34A8C4;
+        position: relative; }
+        .tiles .extra .sortBy a:after {
+          content: '';
+          position: absolute;
+          top: 5px;
+          right: -17px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 7px 5px 0 5px;
+          border-color: #c2c7cc transparent transparent transparent; }
+  .tiles .eachTile {
+    width: 230px;
+    display: inline-block;
+    margin-left: 20px;
+    background-color: white;
+    border: 1px solid #9FA0AB;
+    border-radius: 3px;
+    margin-top: 20px;
+    position: relative; }
+    .tiles .eachTile img {
+      width: 100%; }
+    .tiles .eachTile p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-bottom: 5px; }
+      .tiles .eachTile p.price {
+        float: right;
+        color: #76C238; }
+      .tiles .eachTile p.title a {
+        text-decoration: none;
+        color: black; }
+      .tiles .eachTile p.name a {
+        text-decoration: none;
+        color: grey; }
+        .tiles .eachTile p.name a:hover {
+          text-decoration: underline; }

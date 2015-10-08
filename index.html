@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SAMPLE PROJECT</title>
+  <title>WATWARS</title>
   <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -73,9 +73,9 @@
         <div class="box">
           <p>Item Type</p>
           <ul>
-            <li><button></button><a href="#">All Items</a></li>
-            <li><button></button><a href="#">Handmade</a></li>
-            <li><button></button><a href="#">Vintage</a></li>
+            <li><input type="radio"><a href="#">All Items</a></li>
+            <li><input type="radio"><a href="#">Handmade</a></li>
+            <li><input type="radio"><a href="#">Vintage</a></li>
           </ul>
 
           <hr class="divider">
@@ -95,7 +95,7 @@
             <p class='money'>$</p>
             <p class='money2'>$</p>
 
-          <hr class="divider">
+          <hr class="dividerSpecial">
 
           <p>Filter by Color</p>
           <div class='color_buttons'>
@@ -113,18 +113,18 @@
 
           <p>Ordering Options</p>
           <ul>
-            <li><button></button><a href="#">Accepts Etsy Gift Cards</a>
+            <li><input type="checkbox"><a href="#">Accepts Etsy Gift Cards</a>
             </li>
-            <li><button></button><a href="#">Customizable</a></li>
+            <li><input type="checkbox"><a href="#">Customizable</a></li>
           </ul>
 
           <hr class="divider">
 
           <p>Shop Location</p>
           <ul>
-            <li><button></button><a href="#">Anywhere</a></li>
-            <li><button></button><a href="#">United States</a></li>
-            <li><a href="#">Choose a custom location</a></li>
+            <li><input type="radio"><a href="#">Anywhere</a></li>
+            <li><input type="radio"><a href="#">United States</a></li>
+            <li class ="chooseLocation"><a href="#">Choose a custom location</a></li>
           </ul>
 
           <hr class="divider">
@@ -136,37 +136,30 @@
         </div>
       </div>
     </div>
+
+    <div class="tiles">
+<!--each tile div is located here via JS -->
+      
+      <ul class="extra">
+        <li class="top">Top categories for "watwars"<br><br></li>
+        <li><a href="#">All Categories</a> > "starwars" (get Results)<p class='sortBy'>Sort by: <a href="#">Relevancy</a></p></li>
+      </ul>
+
+    </div>
   </div>
 
+ 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-<div class="container"></div>
   <script type="text/template" id="itemTemplate">
-    <div>
-      <p> <%= title %> </p>
-      <p class="price"> <%= price %> </p>
-      <img src="<%= Images[0].url_170x135 %>">
+    <div class="eachTile">
+      <a href="#"><img src="<%= Images[0].url_170x135 %>"></a>
+      <p class="title"> <a href='#'><%= title %> </a></p>
+      <p class="price"> $<%= price %> <%=currency_code %> </p>
+      <p class="name"> <a href='#'><%=Shop.shop_name %></a> </p>
+      <p class ='currency'>  </p>
     </div>
-    <hr>
   </script>
- -->
+
 
 
 

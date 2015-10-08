@@ -1,14 +1,14 @@
 (function () {
 
 
-  // var templateString= $('#itemTemplate').text();
+  var templateString= $('#itemTemplate').text();
 
-  // var templateFunction = _.template(templateString);
+  var templateFunction = _.template(templateString);
 
-  // _.each(etsy.results, function(item){
-  //   var itemHTML = templateFunction(item);
-  //   $('.container').append(itemHTML);
-  // });
+  _.each(etsy.results, function(item){
+    var itemHTML = templateFunction(item);
+    $('.tiles').append(itemHTML);
+  });
 
 
 
