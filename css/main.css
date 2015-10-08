@@ -125,6 +125,9 @@ body {
   .sidebar_two p {
     font-weight: bold;
     padding-bottom: 5px; }
+  .sidebar_two .divider {
+    margin-top: 15px;
+    margin-bottom: 15px; }
   .sidebar_two .box {
     border: 1px solid #9FA0AB;
     border-radius: 2px;
@@ -142,9 +145,48 @@ body {
         .sidebar_two .box li a:hover {
           color: black;
           font-weight: bold; }
-  .sidebar_two .divider {
-    margin-top: 15px;
-    margin-bottom: 15px; }
+    .sidebar_two .box .shipIt {
+      padding-bottom: 25px; }
+    .sidebar_two .box .shipping input {
+      width: 200px;
+      padding-left: 5px; }
+    .sidebar_two .box form {
+      display: inline-block;
+      margin-top: -15px; }
+    .sidebar_two .box input {
+      width: 50px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      border-radius: 2px;
+      margin-top: -10px; }
+      .sidebar_two .box input.highPrice {
+        margin-left: 20px; }
+      .sidebar_two .box input.arrow {
+        position: relative;
+        top: 27px;
+        background-color: white;
+        width: 40px;
+        padding-bottom: 12px;
+        padding-top: 7px; }
+    .sidebar_two .box p.to {
+      position: relative;
+      font-weight: normal;
+      right: 96px; }
+    .sidebar_two .box p.money {
+      position: relative;
+      font-weight: normal;
+      bottom: 28px;
+      right: -10px;
+      width: 5px;
+      margin-bottom: -40px; }
+    .sidebar_two .box p.money2 {
+      position: relative;
+      font-weight: normal;
+      right: 96px;
+      bottom: 9px;
+      left: 110px;
+      width: 5px; }
   .sidebar_two .button {
     height: 20px;
     width: 20px;

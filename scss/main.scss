@@ -8,7 +8,7 @@ body {
   min-width: 1000px;
 }
 
-//Header Styling
+//Header Styling----------------------------------------//
 
 .header{
   display: inline-block;
@@ -96,7 +96,7 @@ body {
   }
 }
 
-//Navbar Styling
+//Navbar Styling ----------------------------------------//
 .nav{
   border-bottom: 1px solid #9FA0AB;
   margin-top: 0;
@@ -117,7 +117,7 @@ body {
   }  
 }
 
-
+//Left Side-bar styling ---------------------------------//
 .left_content{
   background-color: #F5F5F1;
   padding-left: 100px;
@@ -150,6 +150,7 @@ body {
         }
       }
     }
+
   }
 }
 
@@ -160,6 +161,10 @@ body {
   p {
     font-weight: bold;
     padding-bottom: 5px;
+  }
+  .divider{
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
   .box{
     border: 1px solid #9FA0AB;
@@ -182,11 +187,62 @@ body {
         }
       }
     }
+    .shipIt{
+      padding-bottom: 25px;
+    }
+    .shipping input{
+    width: 200px;
+    padding-left: 5px;
+    }
+    
+    form{
+      display:inline-block;
+      margin-top: -15px;
+    }
+    input{
+      width: 50px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      border-radius: 2px;
+      margin-top: -10px;
+      &.highPrice{
+        margin-left: 20px;
+      }
+      &.arrow{
+        position: relative;
+        top: 27px;
+        background-color: white;
+        width: 40px;
+        padding-bottom: 12px;
+        padding-top: 7px;
+      }
+    }
+    p.to{
+      position: relative;
+      font-weight: normal;
+      right: 96px;
+    }
+    p.money{
+      position: relative;
+      font-weight: normal;
+      bottom: 28px;
+      right: -10px;
+      width: 5px;
+      margin-bottom: -40px;
+    }
+    p.money2{
+      position: relative;
+      font-weight: normal;
+      right: 96px;
+      bottom: 9px;
+      left: 110px;
+      width: 5px;
+    }
   }
-  .divider{
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
+
+
+  //Filter By Color Option ----------------------------------
   .button{
     height: 20px;
     width: 20px;
@@ -215,5 +271,4 @@ body {
   .black{
     background-color: black;
   }
-
 }

@@ -81,9 +81,19 @@
           <hr class="divider">
 
           <p>Price</p>
-          <p>
-            <button>$ Low</button> to <button>$ High</button><button></button>
-          </p>
+          
+            <form method="post" action="" class="">
+              <input type="text" name="Price" placeholder="Low">
+            </form>
+            <form method="post" action="" class="">
+              <input type="text" name="Price" placeholder="High" class="highPrice">
+            </form>
+            <form method="post" action="" class="">
+              <input type='button' name='next' class='arrow'>
+              <p class='to'>to</p>
+            </form>
+            <p class='money'>$</p>
+            <p class='money2'>$</p>
 
           <hr class="divider">
 
@@ -103,7 +113,8 @@
 
           <p>Ordering Options</p>
           <ul>
-            <li><button></button><a href="#">Accepts Etsy Gift Cards</a></li>
+            <li><button></button><a href="#">Accepts Etsy Gift Cards</a>
+            </li>
             <li><button></button><a href="#">Customizable</a></li>
           </ul>
 
@@ -118,8 +129,10 @@
 
           <hr class="divider">
 
-          <p>Ship To</p>
-          <button>United States</button>
+          <p class="shipIt">Ship To</p>
+          <form method="post" action="" class="shipping">
+            <input type="text" name="" placeholder="United States">
+          </form>
         </div>
       </div>
     </div>
