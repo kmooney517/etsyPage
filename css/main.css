@@ -233,8 +233,16 @@ body {
 
 .tiles {
   font-size: 12px;
-  background-color: #F5F5F1;
-  margin-left: 20px; }
+  background-color: #F5F5F1; }
+  .tilesafter:hover {
+    position: relative;
+    top: 20px;
+    right: 20px;
+    content: "";
+    background: url("../images/heart.png") no-repeat 0 -1px;
+    background-size: 15px 15px;
+    width: 15px;
+    height: 14px; }
   .tiles .extra {
     padding-top: 25px;
     font-size: 13px; }
@@ -294,3 +302,99 @@ body {
         color: grey; }
         .tiles .eachTile p.name a:hover {
           text-decoration: underline; }
+
+.relatedTo {
+  padding-top: 25px;
+  padding-left: 380px;
+  background-color: #F5F5F1; }
+  .relatedTo p {
+    font-size: 14px;
+    padding-bottom: 10px; }
+  .relatedTo ul {
+    padding-left: 0px;
+    padding-right: 70px;
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 10px; }
+  .relatedTo li {
+    padding-bottom: 5px; }
+    .relatedTo li a {
+      text-decoration: none;
+      color: #34A8C4; }
+  .relatedTo .looking a {
+    text-decoration: none;
+    color: #34A8C4; }
+  .relatedTo .looking {
+    padding-bottom: 20px; }
+  .relatedTo .pagenumber button {
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #9FA0AB;
+    width: 36px;
+    height: 30px;
+    margin: -3px;
+    line-height: 25px;
+    background-color: white;
+    margin-bottom: 20px; }
+    .relatedTo .pagenumber button:hover {
+      background-color: #F3F3F3;
+      border-color: black; }
+  .relatedTo .leftBox {
+    border-radius: 3px; }
+  .relatedTo .rightBox {
+    border-radius: 3px; }
+
+.subscribe {
+  font-size: 14px;
+  text-align: center;
+  background-color: #F5F5F1;
+  border-top: 1px solid #9FA0AB;
+  border-bottom: 1px solid #9FA0AB;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .subscribe form {
+    padding-top: 10px;
+    display: inline-block; }
+  .subscribe button {
+    font-size: 15px;
+    padding: 10px;
+    background-color: #34A8C4;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    height: 50px; }
+  .subscribe input {
+    width: 200px;
+    height: 30px;
+    border-radius: 3px;
+    margin-right: 8px; }
+
+.footerA {
+  background-color: #F5F5F1;
+  padding: 20px 200px;
+  font-size: 12px;
+  border-bottom: 1px solid #9FA0AB; }
+  .footerA a {
+    text-decoration: none;
+    color: #34A8C4; }
+  .footerA li {
+    padding-bottom: 10px; }
+
+.footerA div {
+  display: inline-block;
+  padding-right: 20px; }
+
+.column1 button {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #34A8C4;
+  color: white;
+  border: none;
+  margin-bottom: 10px; }
+
+.footerB {
+  color: black;
+  text-align: center;
+  background-color: #F5F5F1;
+  height: 100px;
+  padding-top: 50px; }
