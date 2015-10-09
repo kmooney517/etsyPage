@@ -297,9 +297,9 @@
   <script type="text/template" id="itemTemplate">
     <div class="eachTile">
       <a href="<%= url %>"><img src="<%= Images[0].url_170x135 %>"></a>
-      <p class="title"> <a href='#'><%= title %> </a></p>
+      <p class="title"> <a href='<%= Shop.url %>'><%= title %> </a></p>
       <p class="price"> $<%= price %> <%=currency_code %> </p>
-      <p class="name"> <a href='#'><%=Shop.shop_name %></a> </p>
+      <p class="name"> <a href='<%= Shop.url %>'><%=Shop.shop_name %></a> </p>
       <p class ='currency'>  </p>
     </div>
   </script>
