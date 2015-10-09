@@ -22,5 +22,4 @@ gulp.task('sass', function(){
     .pipe( notifyError() )
     .pipe( sass() )
     .pipe( gulp.dest('./css') );
-
 });

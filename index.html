@@ -73,9 +73,9 @@
         <div class="box">
           <p>Item Type</p>
           <ul>
-            <li><input type="radio"><a href="#">All Items</a></li>
-            <li><input type="radio"><a href="#">Handmade</a></li>
-            <li><input type="radio"><a href="#">Vintage</a></li>
+            <li><input type="radio" name="itemtype" checked="checked"><a href="#">All Items</a></li>
+            <li><input type="radio" name="itemtype"><a href="#">Handmade</a></li>
+            <li><input type="radio" name="itemtype"><a href="#">Vintage</a></li>
           </ul>
 
           <hr class="divider">
@@ -122,8 +122,8 @@
 
           <p>Shop Location</p>
           <ul>
-            <li><input type="radio"><a href="#">Anywhere</a></li>
-            <li><input type="radio"><a href="#">United States</a></li>
+            <li><input type="radio" name="kevin" checked="checked"><a href="#">Anywhere</a></li>
+            <li><input type="radio" name="kevin"><a href="#">United States</a></li>
             <li class ="chooseLocation"><a href="#">Choose a custom location</a></li>
           </ul>
 
@@ -300,7 +300,7 @@
       <p class="title"> <a href='<%= Shop.url %>'><%= title %> </a></p>
       <p class="price"> $<%= price %> <%=currency_code %> </p>
       <p class="name"> <a href='<%= Shop.url %>'><%=Shop.shop_name %></a> </p>
-      <p class ='currency'>  </p>
+      
     </div>
   </script>
 
