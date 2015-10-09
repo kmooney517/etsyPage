@@ -13,7 +13,7 @@ body {
   display: inline-block;
   margin: 0;
   padding: 20px 75px;
-  border-bottom: 1px solid #9FA0AB; }
+  border-bottom: 1px solid #c4c4c0; }
   .header li {
     display: inline-block; }
   .header div.left {
@@ -58,11 +58,11 @@ body {
         border-top: 0;
         border-bottom: 0;
         border-right: 0;
-        border-left: 1px solid #9FA0AB;
+        border-left: 1px solid #c4c4c0;
         border-radius: 0;
         padding-top: 20px;
         padding-left: 20px;
-        color: #9FA0AB;
+        color: #c4c4c0;
         font-size: 14px; }
         .header div.right ul li .cart:hover {
           background-color: white; }
@@ -80,7 +80,7 @@ body {
     left: 23px; }
 
 .nav {
-  border-bottom: 1px solid #9FA0AB;
+  border-bottom: 1px solid #c4c4c0;
   margin-top: 0; }
   .nav ul {
     margin-left: 75px;
@@ -90,7 +90,7 @@ body {
     display: inline-block;
     padding-right: 25px;
     font-size: 14px;
-    color: #9FA0AB; }
+    color: #c4c4c0; }
     .nav li a {
       text-decoration: none;
       color: #9FA0AB; }
@@ -109,7 +109,7 @@ body {
   .sidebar_one p {
     font-weight: bold; }
   .sidebar_one .box {
-    border: 1px solid #9FA0AB;
+    border: 1px solid #c4c4c0;
     border-radius: 2px;
     background-color: white;
     padding: 10px; }
@@ -136,7 +136,7 @@ body {
     margin-top: 15px;
     margin-bottom: 15px; }
   .sidebar_two .box {
-    border: 1px solid #9FA0AB;
+    border: 1px solid #c4c4c0;
     border-radius: 2px;
     background-color: white;
     padding: 10px; }
@@ -153,7 +153,7 @@ body {
         height: 0;
         border-style: solid;
         border-width: 5px 0 5px 10px;
-        border-color: transparent transparent transparent grey; }
+        border-color: transparent transparent transparent #c4c4c0; }
     .sidebar_two .box ul {
       padding-left: 10px; }
     .sidebar_two .box li {
@@ -213,7 +213,7 @@ body {
   .sidebar_two .button {
     height: 20px;
     width: 20px;
-    border: 1px solid #9FA0AB;
+    border: 1px solid #c4c4c0;
     border-radius: 2px;
     display: inline-block; }
   .sidebar_two .red {
@@ -263,13 +263,13 @@ body {
           height: 0;
           border-style: solid;
           border-width: 7px 5px 0 5px;
-          border-color: #c2c7cc transparent transparent transparent; }
+          border-color: #c4c4c0 transparent transparent transparent; }
   .tiles .eachTile {
     width: 230px;
     display: inline-block;
     margin-left: 20px;
     background-color: white;
-    border: 1px solid #9FA0AB;
+    border: 1px solid #c4c4c0;
     border-radius: 3px;
     margin-top: 20px;
     position: relative; }
@@ -281,7 +281,7 @@ body {
       background-color: white;
       background-image: url("../images/hamburger.png");
       background-size: 20px 20px;
-      border: 1px solid #9FA0AB;
+      border: 1px solid #c4c4c0;
       width: 20px;
       height: 19px;
       margin-top: 5px;
@@ -295,7 +295,7 @@ body {
       background-color: white;
       background-image: url("../images/heart.png");
       background-size: 20px 20px;
-      border: 1px solid #9FA0AB;
+      border: 1px solid #c4c4c0;
       width: 20px;
       height: 19px;
       margin-top: 5px;
@@ -348,7 +348,7 @@ body {
   .relatedTo .pagenumber button {
     text-align: center;
     display: inline-block;
-    border: 1px solid #9FA0AB;
+    border: 1px solid #c4c4c0;
     width: 36px;
     height: 30px;
     margin: -3px;
@@ -356,7 +356,7 @@ body {
     background-color: white;
     margin-bottom: 20px; }
     .relatedTo .pagenumber button:hover {
-      background-color: #F3F3F3;
+      background-color: #F5F5F1;
       border-color: black; }
   .relatedTo .leftBox {
     border-radius: 3px; }
@@ -367,8 +367,8 @@ body {
   font-size: 14px;
   text-align: center;
   background-color: #F5F5F1;
-  border-top: 1px solid #9FA0AB;
-  border-bottom: 1px solid #9FA0AB;
+  border-top: 1px solid #c4c4c0;
+  border-bottom: 1px solid #c4c4c0;
   padding-top: 20px;
   padding-bottom: 20px; }
   .subscribe form {
@@ -392,7 +392,7 @@ body {
   background-color: #F5F5F1;
   padding: 20px 200px;
   font-size: 12px;
-  border-bottom: 1px solid #9FA0AB; }
+  border-bottom: 1px solid #c4c4c0; }
   .footerA a {
     text-decoration: none;
     color: #34A8C4; }
